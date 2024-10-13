@@ -1,0 +1,156 @@
+
+body {
+    font-family: 'Roboto', sans-serif; /* Välj ditt typsnitt */
+    margin: 0; 
+    background-color: white  ; /* Ljusgrå bakgrundsfärg */
+    padding: 0;
+  }
+  h1, h2 {
+    text-align: center; /* Centrera rubriker */
+    margin-bottom: 0%;
+  }
+  .container {
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 20px 0; 
+  }
+ 
+    header .container {
+        display: flex; 
+        flex-direction: column; 
+        text-align: center;
+        margin-top:  0%;
+        background-color: rosybrown;
+        width: 100%;
+      }
+
+
+  
+  .content h2 {
+    padding-top: 1%;
+    padding-right: 50%;
+    
+      }
+
+  .section .container {
+    display: flex; /* Använd Flexbox för att styra innehållet */
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .section .content {
+    width: 50%; 
+    padding: 20px; 
+  }
+  .section .image {
+    width: 50%; /* Bredden på bilden */
+    position: relative; 
+    
+  }
+
+  .section .container .content {
+ width: 100%;
+ padding-right: 30%;
+ padding-bottom: 20%;
+ margin-right: 30%;
+ margin-bottom: 20%;
+
+  }
+  .section .image img {
+    width: 90%; /* Bilden tar upp hela bredden */
+    height: auto; /* Bildens höjd skalas automatiskt */
+  }
+  .image{
+    width: 50%;
+  }
+  /* Projekt */
+  .project-grid {
+    display: grid; /* Använd Grid för att skapa rutnätet */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Rutnätets kolumner */
+    gap: 80px; /* Avstånt */
+  }
+  .project {
+    text-align: center; /* Centrera texten i projekten */
+  }
+  .project a {
+    text-decoration: none; 
+    color: #333; 
+  }
+  .project img {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+  }
+  /* Footer */
+  footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px 0; 
+    
+    
+  }
+  /* Parallax-effekt */
+  .section {
+    background-attachment: fixed; 
+    background-size: cover; 
+  }
+  #om-mig {
+    background-image: url("image/profilimage.JPG "); /* Bakgrundsbild för "Om Mig" */
+    
+  }
+  #projekt {
+    background-image: url("image/Arduino.jpg "); /* Bakgrundsbild för "Projekt" */
+  }
+  #kontakt {
+    background-image: url("image/projct photo.jpg "); /* Bakgrundsbild för "Kontakt" */
+  }
+  .section .image {
+    background-attachment: fixed; /* Gör att bakgrunden är fast vid scrollning */
+    background-size: cover; 
+  }
+  .section .image img {
+    opacity: 0; /* Dölj bilden */
+    width: 50%;
+  }
+  
+  .section .image::after {
+    content: ""; /* Skapa ett pseudoelement */
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: grey; 
+    opacity: 0; 
+    transition: opacity 0.5s ease;
+  }
+  
+  .section:hover .image::after {
+    opacity: 1; /* Visa bakgrundsfärgen vid hover */
+  }
+ 
+  .content-links a {
+    display: inline-block; 
+    width: 80%;
+  }
+ 
+  
+  .content a{
+    font-size: 1.9cm;
+    padding-right: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 3s;
+    display: inline-block;
+    transition: 2s;
+    margin-left: 50px;
+    color: fuchsia;
+  }
+
+@media only screen and (max-width:90px) {
+    
+}
+
+
+  
